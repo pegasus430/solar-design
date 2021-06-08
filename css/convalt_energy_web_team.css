@@ -1,0 +1,123 @@
+nav {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+nav .nav-title {	
+	color: #fefefe;
+	text-transform: uppercase;
+}
+nav .nav-title > div {
+	display: flex;
+}
+nav .nav-title h1 {
+	font-size: 40px;
+ 	margin-bottom: 10px;
+    font-family: 'Gill-Sans-Bold';
+    letter-spacing: 3px;
+}
+nav .nav-title h2 {
+	font-size: 24px;
+    font-family: 'Gill-Sans-Bold';
+    margin-right: 145px;
+}
+section .text {
+	display: flex;
+	justify-content: space-between;
+}
+section .text > div {
+	width: 50%;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+section .text .left {
+	margin-right: 30px;
+}
+section h2,
+section h4 {
+	font-size: 24px;
+	color: #228adb;
+	text-transform: uppercase;
+	font-family: 'Gill-Sans-Bold';
+}
+section h3 {
+	font-size: 24px;
+	color: #228adb;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 18px;
+}
+section h2 {
+	margin-bottom: 13px;
+}
+section h4 {
+	margin-bottom: 20px;
+}
+section p {
+	flex-grow: 1;
+	font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+section h6 {
+	text-align: right;
+}
+section h6 a {
+	color: #228adb;
+	font-size: 18px;
+    font-weight: 700;
+}
+section h6 a:hover {
+	color: #60b3f3;
+}
+section h1 {
+	font-size: 38px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-bottom: 10px solid #72c405;
+	font-family: 'Gill-Sans-Bold';
+	padding-bottom: 8px;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	color: #504e4e;
+}
+.technical {
+	margin-bottom: 50px;
+}
+.technical h2,
+.technical h3,
+.technical h4 {
+	letter-spacing: 2px;
+}
+@media screen and (max-width: 1200px) {
+	section .text {
+		flex-direction: column;
+	}
+	section .text > div {
+		width: 100%;
+	}
+	section .text .left {
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 992px) {
+	nav .nav-title > div {
+		flex-direction: column;
+	}
+	nav .nav-title h2 {
+		margin: 20px 0;
+	}
+	.technical {
+		margin-bottom: 0;
+	}
+}
+@media screen and (max-width: 576px) {
+	nav .nav-title h2 {
+		font-size: 20px;
+	}
+	nav .nav-title h1 {
+    	font-size: 30px;
+	}
+}

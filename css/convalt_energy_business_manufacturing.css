@@ -1,0 +1,246 @@
+nav {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+nav .nav-title {	
+	color: #fefefe;
+	text-transform: uppercase;
+}
+nav .nav-title h1 {
+	font-size: 40px;
+    font-family: 'Gill-Sans-Bold';
+    letter-spacing: 3px;
+}
+p {
+	font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.main-top {
+	margin-bottom: 40px;
+}
+.main-top-text {
+	margin-bottom: 50px;
+}
+.main-top-text p {
+	text-align: center;
+	letter-spacing: 4px;
+}
+h2 {
+	color: #228adb;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Gill-Sans-Bold';
+	letter-spacing: 8px;
+	margin-bottom: 30px;
+}
+.main-top .itembar {
+	display: flex;
+}
+.main-top .item {
+	width: 34%;
+	color: #616161;
+	margin-right: 40px;
+	text-align: center;
+}
+.main-top .item img {
+	margin-bottom: 30px;
+	height: 195px;
+}
+.main-top .item h6 {
+	font-size: 18px;
+	font-family: 'Gill-Sans-Bold';
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.main-top .item p {
+	text-align: center;
+}
+.maximum {
+	background: url(../img/bg8.png) no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	padding-top: 75px;
+	height: 700px;
+	margin-bottom: 80px;
+}
+.maximum h3 {
+	text-transform: uppercase;
+	font-family: 'Gill-Sans-Bold';
+	text-align: center;
+	font-size: 70px;
+	letter-spacing: 10px;
+	margin-bottom: 35px;
+}
+.maximum p {
+	text-align: center;
+	font-size: 22px;
+    letter-spacing: 5px;
+    max-width: 900px;
+    margin: auto;
+}
+.solar-cell h2 {
+	margin-bottom: 70px;
+}
+.solar-cell .cell-main {
+	display: flex;
+}
+.solar-cell .cell-main .cell-img {
+	width: 50%;
+	margin-right: 40px;
+}
+.solar-cell .cell-main .cell-img img {
+	width: 100%;
+}
+.solar-cell .cell-main .cell-text {
+	width: 50%;
+}
+.solar-cell .cell-main .cell-text h4 {
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 3px;
+	color: #525252;
+	font-family: 'Gill-Sans-Bold';
+	margin-bottom: 20px;
+}
+.solar-cell .cell-main .cell-text p {
+	letter-spacing: 2px;
+}
+.solar-cell .cell-main .cell-text .block {
+	margin-bottom: 140px;
+}
+.description > div .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #494949;
+	padding-top: 100px;
+}
+.description h4 {
+	font-family: 'Gill-Sans-Bold';
+	text-transform: uppercase;
+	font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+.description h5 {
+	font-family: 'Gill-Sans-Bold';
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: 3px;
+	margin-bottom: 25px;
+}
+.description h6 {
+	color: #228adb;
+	font-family: 'Gill-Sans-Bold';
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 25px;
+}
+.description p {
+	font-size: 20px;
+	letter-spacing: 4px;
+	margin-bottom: 25px;
+}
+.description img {
+	width: 100%;
+}
+.description .reliability-text {
+	width: 60%;
+}
+.description .different-better-text {
+	width: 60%;
+}
+.description .warranty-text {
+	width: 70%;
+}
+.description .solar-panel-text {
+	width: 70%;
+}
+.description .reliability-img {
+	width: 33%;
+}
+.description .different-better-img {
+	width: 35%;
+}
+.description .warranty-img {
+	width: 23%;
+}
+.description .solar-panel-img {
+	width: 20%;
+}
+.solar-panel {
+	background: url(../img/bg10.png) no-repeat;
+	background-size: 100% 100%;
+}
+.different-better {
+	background: url(../img/bg11.png) no-repeat;
+	background-size: 100% 100%;
+}
+.warranty {
+	background: url(../img/bg12.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+@media screen and (max-width: 1400px) {
+	.solar-cell .cell-main .cell-text .block {
+		margin-bottom: 90px;
+	}
+
+}
+@media screen and (max-width: 1200px) {
+	.solar-cell .cell-main .cell-text .block {
+		margin-bottom: 45px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.itembar {
+		flex-direction: column;
+	}
+	.main-top .item {
+		width: 100%;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	.solar-cell .cell-main {
+		flex-direction: column;
+	}
+	.solar-cell .cell-main .cell-img {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.solar-cell .cell-main .cell-text {
+		width: 100%;
+	}
+	.description > div .container {
+		flex-direction: column;
+	}
+	.solar-panel .container {
+		flex-direction: column-reverse !important;
+	}
+	.description .reliability-text,
+	.description .different-better-text,
+	.description .warranty-text,
+	.description .solar-panel-text,
+	.description .reliability-img,
+	.description .different-better-img,
+	.description .warranty-img,
+	.description .solar-panel-img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 576px) {
+	nav .nav-title h1 {
+		font-size: 32px;
+	}
+	.maximum h3 {
+		font-size: 48px;
+	}
+}

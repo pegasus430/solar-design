@@ -1,0 +1,134 @@
+nav {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+nav .nav-title {	
+	color: #fefefe;
+	text-transform: uppercase;
+}
+nav .nav-title h1 {
+	font-size: 40px;
+    font-family: 'Gill-Sans-Bold';
+    letter-spacing: 3px;
+}
+h2 {
+	font-size: 24px;
+	color: #228adb;
+	text-transform: uppercase;
+	font-family: 'Gill-Sans-Bold';
+	margin-bottom: 25px;
+}
+p {
+	font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.introducing {
+	margin-bottom: 20px;
+}
+.introducing .container {
+	display: flex;
+	align-items: center;
+}
+.introducing-text {
+	width: 50%;
+	margin-right: 30px;
+}
+.introducing-img {
+	width: 50%;
+}
+.introducing-img img {
+	width: 100%;
+}
+.imgbar, .imgbar img {
+	width: 100%;
+}
+.imgbar {
+	margin-bottom: 50px;
+}
+.time-map {
+	margin-bottom: 100px;
+}
+.time-map .container {
+	display: flex;
+	align-items: center;
+}
+.time-map-img {
+	width: 60%;
+	margin-right: 30px;
+}
+.time-map-img img {
+	width: 100%;
+}
+.time-map-text {
+	width: 40%;
+}
+.time-map-text p span {
+	font-family: 'Gill-Sans-Bold';
+}
+.main-text {
+	margin-bottom: 50px;
+}
+.img-content {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.img-content img {
+	width: 100%;
+	height: 100%;
+}
+.img-left {
+	width: 70%;
+	margin-right: 20px;
+	min-height: 100%;
+}
+.img-right {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.img-right img {
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+	.introducing .container {
+		flex-direction: column;
+	}
+	.introducing-text {
+		width: 100%;
+		margin-right: 0;
+	}
+	.time-map .container {
+		flex-direction: column;
+	}
+	.time-map-text {
+		width: 100%;
+	}
+	.time-map-img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.time-map {
+		margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.img-content {
+		flex-direction: column;
+	}
+	.img-left {
+		width: 100%;
+		margin: 0 0 20px;
+	}
+	.img-right {
+		width: 100%;
+	}
+	.img-content {
+		margin-bottom: 50px;
+	}
+}
