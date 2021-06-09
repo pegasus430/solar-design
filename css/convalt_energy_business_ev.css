@@ -94,7 +94,7 @@ p {
 	justify-content: space-between;
 }
 .charger-types .main-text > div img {
-	width: 60px;
+	height: 65px;
 	margin-bottom: 20px;
 }
 .charger-types .main-text {
@@ -170,13 +170,13 @@ p {
 }
 @media screen and (max-width: 1200px) {
 	.green {
-		height: 720px;
+		height: 740px;
 	}
 	.absolute-text {
-		top: 719px;
+		top: 739px;
 	}
 	.charger-types .main-text {
-		min-height: 576px;
+		min-height: 590px;
 	}
 	.green .main-text {
 		min-height: 605px !important;
@@ -216,6 +216,9 @@ p {
 	}
 	.absolute-text {
 		display: none;
+	}
+	.green {
+		height: auto;
 	}
 }
 @media screen and (max-width: 768px) {

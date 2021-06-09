@@ -1,56 +1,15 @@
 nav {
 	padding-bottom: 110px;
 }
+nav .nav-main {
+	position: relative;
+}
 nav .ball {
 	position: absolute;
 	top: 300px;
-	left: 0px;
-}
-@media screen and (min-width: 576px) {
-	nav .nav-main .container {
-		width: 540px;
-		margin-right: auto;
-		margin-left: auto;
-		padding-left: 0;
-	}
-	.ball {
-		display: none;
-	}	
-}
-@media screen and (min-width: 768px) {
-	nav .nav-main .container {
-		width: 720px;
-	}
-}
-@media screen and (min-width: 992px) {
-	nav .nav-main .container {
-		width: calc(100% - (100% - 960px)/2) !important;
-		max-width: 100%;
-		margin-right: auto;
-		margin-left: initial;
-		padding-left: 110px;
-	}
-	.ball {
-		display: block;
-	}	
-}
-@media screen and (min-width: 1200px) {
-	nav .nav-main .container {
-		width: calc(100% - (100% - 1140px)/2) !important;
-	}	
-}
-@media screen and (min-width: 1400px) {
-	nav .nav-main .container {
-		width: calc(100% - (100% - 1320px)/2) !important;
-	}	
-}
-@media screen and (min-width: 1550px) {
-	nav .nav-main .container {
-		width: calc(100% - (100% - 1520px)/2) !important;		
-	}	
+	left: 20px;
 }
 nav .nav-main .container {
-	position: relative;
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -245,6 +204,7 @@ p {
 	justify-content: space-around;
 }
 .article {
+	position: relative;
 	width: 500px;
     height: 300px;
     background: white;
@@ -255,7 +215,30 @@ p {
     align-items: center;
     font-size: 20px;
     letter-spacing: 1.2px;
-    padding-left: 60px;
+}
+.article h2 {
+	text-align: center;
+	font-family: 'Gill-Sans-Bold';
+	font-size: 34px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: white;
+}
+.news1 {
+	background: url(../img/news1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.news2 {
+	background: url(../img/news2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.news3 {
+	background: url(../img/news3.png) no-repeat;
+	background-size: 100% 100%;
+}
+.article img {
+	width: 100%;
+	height: 100%;
 }
 .form-content .container {
 	position: relative;
@@ -294,7 +277,7 @@ p {
 	line-height: 60px;
 	margin-bottom: 12px;
 }
-.form-content-main > div {
+.form-content-main > form > div {
 	width: 400px;
 }
 .form-content-main textarea,
@@ -304,6 +287,11 @@ p {
 	border-radius: 5px;
 	outline: none;
 	border: #bfbfbf 1px solid;
+}
+.form-content-main textarea {
+	padding-top: 23px;
+	line-height: 24px;
+	height: 120px;
 }
 .form-content-main button {
 	padding: 15px 42px;
@@ -387,6 +375,9 @@ p {
 	.form-content .circle2 {
 		display: none;
 	}
+	.ball {
+		display: none;
+	}
 }
 @media screen and (max-width: 576px) {
 	.main-bottom-left, .main-bottom-right {
@@ -410,7 +401,7 @@ p {
 	.main-content {
 		background-size: 100% 2320px;
 	}
-	.ball {
-		display: none;
+	.article h2 {
+		font-size: 30px;
 	}
 }
