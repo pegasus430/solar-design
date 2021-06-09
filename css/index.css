@@ -4,9 +4,10 @@ nav {
 nav .ball {
 	position: absolute;
 	bottom: 35px;
-	left: -130px;
+	left: 0px;
 }
-nav .nav-main {
+nav .nav-main .container {
+	position: relative;
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -161,6 +162,7 @@ p {
 	margin-bottom: 15px;
 }
 .main-bottom-right .warning {
+	cursor: pointer;
 	position: absolute;
 	top: 15px;
 	right: 15px;

@@ -15,7 +15,7 @@ h2 {
 	text-transform: uppercase;
 	color: #228adb;
     font-family: 'Gill-Sans-Bold';
-    font-size: 22px;
+    font-size: 40px;
     letter-spacing: 3px;
 }
 .main-story {
@@ -174,6 +174,9 @@ h2 {
 	text-align: center;
 	margin-right: 20px;
 	padding: 65px 0;
+}
+.icon-content > div img {
+	cursor: pointer;
 }
 .icon-content > div p {
 	position: absolute;

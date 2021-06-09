@@ -114,6 +114,7 @@ nav .header .list .dropdown ul li {
 	padding: 10px 0;
 }
 nav .header .list button {
+	background: white;
 	font-size: 14px;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -180,6 +181,7 @@ footer .footer-right ul {
 	padding-left: 0;
 }
 footer .footer-right ul li {
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;

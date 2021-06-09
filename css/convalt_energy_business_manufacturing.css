@@ -14,7 +14,7 @@ nav .nav-title h1 {
 p {
 	font-weight: 700;
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     text-align: justify;
 }
@@ -26,11 +26,10 @@ p {
 }
 .main-top-text p {
 	text-align: center;
-	letter-spacing: 4px;
 }
 h2 {
 	color: #228adb;
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Gill-Sans-Bold';
@@ -48,7 +47,7 @@ h2 {
 }
 .main-top .item img {
 	margin-bottom: 30px;
-	height: 195px;
+	height: 150px;
 }
 .main-top .item h6 {
 	font-size: 18px;
@@ -77,8 +76,7 @@ h2 {
 }
 .maximum p {
 	text-align: center;
-	font-size: 22px;
-    letter-spacing: 5px;
+	font-size: 18px;
     max-width: 900px;
     margin: auto;
 }
@@ -106,11 +104,8 @@ h2 {
 	font-family: 'Gill-Sans-Bold';
 	margin-bottom: 20px;
 }
-.solar-cell .cell-main .cell-text p {
-	letter-spacing: 2px;
-}
 .solar-cell .cell-main .cell-text .block {
-	margin-bottom: 140px;
+	margin-bottom: 200px;
 }
 .description > div .container {
 	display: flex;
@@ -142,8 +137,7 @@ h2 {
 	margin-bottom: 25px;
 }
 .description p {
-	font-size: 20px;
-	letter-spacing: 4px;
+	font-size: 18px;
 	margin-bottom: 25px;
 }
 .description img {
@@ -185,7 +179,11 @@ h2 {
 	background: url(../img/bg12.png) no-repeat;
 	background-size: 100% 100%;
 }
-
+@media screen and (max-width: 1550px) {
+	.solar-cell .cell-main .cell-text .block {
+		margin-bottom: 155px;
+	}
+}
 
 @media screen and (max-width: 1400px) {
 	.solar-cell .cell-main .cell-text .block {
@@ -221,6 +219,7 @@ h2 {
 	}
 	.description > div .container {
 		flex-direction: column;
+		padding-top: 20px;
 	}
 	.solar-panel .container {
 		flex-direction: column-reverse !important;
@@ -234,6 +233,11 @@ h2 {
 	.description .warranty-img,
 	.description .solar-panel-img {
 		width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	p {
+		letter-spacing: 1px;
 	}
 }
 @media screen and (max-width: 576px) {

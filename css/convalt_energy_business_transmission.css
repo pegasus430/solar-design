@@ -12,7 +12,7 @@ nav .nav-title h1 {
     letter-spacing: 3px;
 }
 h2 {
-	font-size: 24px;
+	font-size: 40px;
 	color: #228adb;
 	text-transform: uppercase;
 	font-family: 'Gill-Sans-Bold';
@@ -72,28 +72,24 @@ p {
 .main-text {
 	margin-bottom: 50px;
 }
-.img-content {
+.video-content {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 100px;
 }
-.img-content img {
-	width: 100%;
-	height: 100%;
-}
-.img-left {
+.video-left {
 	width: 70%;
 	margin-right: 20px;
 	min-height: 100%;
 }
-.img-right {
-	width: 30%;
+.video-right {
+	width: 33%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.img-right img {
-	margin-bottom: 20px;
+.video-right > div {
+	height: 50%;
 }
 @media screen and (max-width: 1200px) {
 	.introducing .container {
@@ -118,17 +114,17 @@ p {
 	}
 }
 @media screen and (max-width: 768px) {
-	.img-content {
+	.video-content {
 		flex-direction: column;
 	}
-	.img-left {
+	.video-left {
 		width: 100%;
 		margin: 0 0 20px;
 	}
-	.img-right {
+	.video-right {
 		width: 100%;
 	}
-	.img-content {
+	.video-content {
 		margin-bottom: 50px;
 	}
 }

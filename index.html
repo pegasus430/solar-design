@@ -29,26 +29,28 @@
 								<a onclick="dropdownshow()" role="button">Our businesses</a>
 								<ul class="dropdown-toggle">
 									<li>
-										<a href="./convalt_energy_business_manufacturing.html" onclick="dropdownshow()">Manufacturing</a>
+										<a href="./convalt_energy_business_manufacturing.html" onclick="dropdownshow()">1.Manufacturing</a>
 									</li>
 									<li>
-										<a href="./convalt_energy_business_powergen.html" onclick="dropdownshow()">Power Generation</a>
+										<a href="./convalt_energy_business_powergen.html" onclick="dropdownshow()">2.Power Generation</a>
 									</li>
 									<li>
-										<a href="./convalt_energy_business_transmission.html" onclick="dropdownshow()">Power Transmission</a>
+										<a href="./convalt_energy_business_transmission.html" onclick="dropdownshow()">3.Power Transmission</a>
 									</li>
 									<li>
-										<a href="./convalt_energy_business_ev.html" onclick="dropdownshow()">EV</a>
+										<a href="./convalt_energy_business_ev.html" onclick="dropdownshow()">4.EV</a>
 									</li>
 								</ul>
 							</li>
-							<li><a href="#">Our products</a></li>
-							<li><a href="#">Media</a></li>
+							<li><a href="./convalt_energy_web_product.html">Our products</a></li>
+							<li><a href="./convalt_energy_web_media.html">Media</a></li>
 						</ul>
-						<button>Contact</button>
+						<button onclick="location.href='./convalt_energy_web_contact.html'">Contact</button>
 					</div>
 				</div>
-				<div class="nav-main">
+			</div>
+			<div class="nav-main">
+				<div class="container">
 					<div class="nav-main-text">
 						<img class="ball" src="./img/ball.png" alt=""/>
 						<h1>We are your power!</h1>
@@ -86,7 +88,7 @@
 						<p style="margin-bottom: 25px">
 							In 2023, we will also become a large manufacturer of solar panels having acquired SunPower’s solar manufacturing lines in the United States.  Our management team has extensive and hands on experience with more than 100 years of collective experience in renewable power development and includes a very experienced team that knows what it takes to run a manufacturing plant. Our headquarters is also moving to Watertown, New York where we would be establishing our manufacturing plants.
 						</p>
-						<button>Team</button>
+						<button onclick="location.href = './convalt_energy_web_team.html'">Team</button>
 					</div>
 				</div>
 				<div class="main-content-bottom">
@@ -104,13 +106,13 @@
 						<div class="main-bottom-right-left">
 							<div>
 								<img src="./img/img1.png" alt=""/>
-								<img class="warning" src="./img/warning.png" alt=""/>
+								<img onclick="location.href = './convalt_energy_business_manufacturing.html'" class="warning" src="./img/warning.png" alt=""/>
 								<h1>Manufacturing</h1>
 								<p>For years, America lost out on solar manufacturing. In the second half of 2023, our acquisition of SunPower’s Hillsboro (Oregon) manufacturing lines will come online – we should become the second largest panel manufacturer in America.</p>
 							</div>
 							<div>
 								<img src="./img/img3.png" alt=""/>
-								<img class="warning" src="./img/warning.png" alt=""/>
+								<img onclick="location.href = './convalt_energy_business_ev.html'" class="warning" src="./img/warning.png" alt=""/>
 								<h1>EV</h1>
 								<p>Electric Vehicle charging is going to be needed across the country and at homes. Convalt EV will be developing this business starting in New York and California and gradually expanding across America.</p>
 							</div>
@@ -118,13 +120,13 @@
 						<div class="main-bottom-right-right">
 							<div>
 								<img src="./img/img2.png" alt=""/>
-								<img class="warning" src="./img/warning.png" alt=""/>
+								<img onclick="location.href = './convalt_energy_business_powergen.html'" class="warning" src="./img/warning.png" alt=""/>
 								<h1>Power Generation</h1>
 								<p>As an American firm, we started in Asia and then Africa. But now we are back home and expect to announce some of the largest renewable developments.  We especially like solar, wind, waste to power and storage.  MACS 911 is our first major project in America!</p>
 							</div>
 							<div>
 								<img src="./img/img4.png" alt=""/>
-								<img class="warning" src="./img/warning.png" alt=""/>
+								<img onclick="location.href = 'convalt_energy_business_transmission.html'" class="warning" src="./img/warning.png" alt=""/>
 								<h1>Power Transmission</h1>
 								<p>New transmission supergrids are going to be needed to switch to renewable power in mass scale. Our American Supergrid proposes to develop one of the boldest initiatives in power grid development. Work with us on executing this – humanity needs it!</p>
 							</div>
@@ -166,19 +168,19 @@
 				</div>
 				<div class="form-content-main">
 					<div>
-						<input type="text" name="fullName" placeholder="Full Name">
+						<input type="text" name="fullName" placeholder="Full Name" required maxlength="45">
 					</div>
 					<div>
-						<input type="text" name="companyName" placeholder="Company Name">
+						<input type="text" name="companyName" placeholder="Company Name" required maxlength="45">
 					</div>
 					<div>
-						<input type="text" name="email" placeholder="Email">
+						<input type="text" name="email" placeholder="Email" required maxlength="45">
 					</div>
 					<div>
-						<input type="text" name="telephone" placeholder="Telephone">
+						<input type="text" name="telephone" placeholder="Telephone" required maxlength="15">
 					</div>
 					<div>
-						<textarea placeholder="Message"></textarea>
+						<textarea placeholder="Message" required></textarea>
 					</div>
 					<button>send</button>
 				</div>
@@ -201,16 +203,16 @@
 								<a onclick="footerdropdownshow()" role="button">Our businesses</a>
 								<ul class="footer-dropdown-toggle">
 									<li>
-										<a href="./convalt_energy_business_manufacturing.html" onclick="footerdropdownshow()">Manufacturing</a>
+										<a href="./convalt_energy_business_manufacturing.html" onclick="footerdropdownshow()">1.Manufacturing</a>
 									</li>
 									<li>
-										<a href="./convalt_energy_business_powergen.html" onclick="footerdropdownshow()">Power Generation</a>
+										<a href="./convalt_energy_business_powergen.html" onclick="footerdropdownshow()">2.Power Generation</a>
 									</li>
 									<li>
-										<a href="./convalt_energy_business_transmission.html" onclick="footerdropdownshow()">Power Transmission</a>
+										<a href="./convalt_energy_business_transmission.html" onclick="footerdropdownshow()">3.Power Transmission</a>
 									</li>
 									<li>
-										<a href="./convalt_energy_business_ev.html" onclick="footerdropdownshow()">EV</a>
+										<a href="./convalt_energy_business_ev.html" onclick="footerdropdownshow()">4.EV</a>
 									</li>
 								</ul>
 							</li>
@@ -223,10 +225,10 @@
 				</div>
 				<div class="footer-right">
 					<ul>
-						<li><i class="fa fa-facebook"></i></li>
-						<li><i class="fa fa-youtube-play"></i></li>
-						<li><i class="fa fa-twitter"></i></li>
-						<li><i class="fa fa-linkedin"></i></li>
+						<li><a href="https://www.facebook.com/facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/facebook"><i class="fa fa-youtube-play"></i></a></li>
+						<li><a href="https://twitter.com/Facebook"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/facebook"><i class="fa fa-linkedin"></i></a></li>
 					</ul>					
 				</div>
 			</div>
