@@ -3,8 +3,51 @@ nav {
 }
 nav .ball {
 	position: absolute;
-	bottom: 35px;
+	top: 300px;
 	left: 0px;
+}
+@media screen and (min-width: 576px) {
+	nav .nav-main .container {
+		width: 540px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 0;
+	}
+	.ball {
+		display: none;
+	}	
+}
+@media screen and (min-width: 768px) {
+	nav .nav-main .container {
+		width: 720px;
+	}
+}
+@media screen and (min-width: 992px) {
+	nav .nav-main .container {
+		width: calc(100% - (100% - 960px)/2) !important;
+		max-width: 100%;
+		margin-right: auto;
+		margin-left: initial;
+		padding-left: 110px;
+	}
+	.ball {
+		display: block;
+	}	
+}
+@media screen and (min-width: 1200px) {
+	nav .nav-main .container {
+		width: calc(100% - (100% - 1140px)/2) !important;
+	}	
+}
+@media screen and (min-width: 1400px) {
+	nav .nav-main .container {
+		width: calc(100% - (100% - 1320px)/2) !important;
+	}	
+}
+@media screen and (min-width: 1550px) {
+	nav .nav-main .container {
+		width: calc(100% - (100% - 1520px)/2) !important;		
+	}	
 }
 nav .nav-main .container {
 	position: relative;
@@ -246,7 +289,6 @@ p {
 .form-content-main input::placeholder,
 .form-content-main textarea {
 	width: 100%;
-	padding-left: 25px;
 	color: #bfbfbf;
 	font-size: 14px;
 	line-height: 60px;
@@ -258,6 +300,7 @@ p {
 .form-content-main textarea,
 .form-content-main input {
 	width: 100%;
+	padding-left: 25px;
 	border-radius: 5px;
 	outline: none;
 	border: #bfbfbf 1px solid;
@@ -274,7 +317,7 @@ p {
 	background: #fde39b;
 }
 @media screen and (max-width: 1200px) {
-	nav .nav-main {
+	nav .nav-main .container {
 		flex-direction: column;
 	}
 	.nav-main-text {
@@ -366,5 +409,8 @@ p {
 	}
 	.main-content {
 		background-size: 100% 2320px;
+	}
+	.ball {
+		display: none;
 	}
 }

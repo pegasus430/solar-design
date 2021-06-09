@@ -38,7 +38,7 @@
 										<a href="./convalt_energy_business_transmission.html" onclick="dropdownshow()">3.Power Transmission</a>
 									</li>
 									<li>
-										<a href="./convalt_energy_business_ev.html" onclick="dropdownshow()">4.EV</a>
+										<a href="./convalt_energy_business_ev.html" onclick="dropdownshow()">4.EV Charging</a>
 									</li>
 								</ul>
 							</li>
@@ -51,8 +51,9 @@
 			</div>
 			<div class="nav-main">
 				<div class="container">
+					<img class="ball" src="./img/ball.png" alt=""/>
 					<div class="nav-main-text">
-						<img class="ball" src="./img/ball.png" alt=""/>
+						
 						<h1>We are your power!</h1>
 						<p>
 							In 2011, when we started our company, we knew what we wanted to be. A renewable power company that was dedicated to deliver renewable power on a global basis where we vertically integrated our businesses. We also wanted to bring manufacturing back to America. So, here we are in 2021 about to bring online one of the largest solar panel manufacturing facilities in America in second half of 2023. 
@@ -113,7 +114,7 @@
 							<div>
 								<img src="./img/img3.png" alt=""/>
 								<img onclick="location.href = './convalt_energy_business_ev.html'" class="warning" src="./img/warning.png" alt=""/>
-								<h1>EV</h1>
+								<h1>EV Charging</h1>
 								<p>Electric Vehicle charging is going to be needed across the country and at homes. Convalt EV will be developing this business starting in New York and California and gradually expanding across America.</p>
 							</div>
 						</div>
@@ -168,16 +169,17 @@
 				</div>
 				<div class="form-content-main">
 					<div>
-						<input type="text" name="fullName" placeholder="Full Name" required maxlength="45">
+						<input id="input-name" type="text" name="fullName" placeholder="Full Name" required maxlength="45">
 					</div>
 					<div>
-						<input type="text" name="companyName" placeholder="Company Name" required maxlength="45">
+						<input id="input-company" type="text" name="companyName" placeholder="Company Name" required maxlength="45">
 					</div>
 					<div>
-						<input type="text" name="email" placeholder="Email" required maxlength="45">
+						<input id="input-email" type="text" name="email" placeholder="Email" required maxlength="45">
 					</div>
 					<div>
-						<input type="text" name="telephone" placeholder="Telephone" required maxlength="15">
+						<input id="input-phone" type="text" name="telephone" placeholder="Telephone" required maxlength="15" onkeyup="checkphone()">
+						<p id="demo"></p>
 					</div>
 					<div>
 						<textarea placeholder="Message" required></textarea>
@@ -212,7 +214,7 @@
 										<a href="./convalt_energy_business_transmission.html" onclick="footerdropdownshow()">3.Power Transmission</a>
 									</li>
 									<li>
-										<a href="./convalt_energy_business_ev.html" onclick="footerdropdownshow()">4.EV</a>
+										<a href="./convalt_energy_business_ev.html" onclick="footerdropdownshow()">4.EV Charging</a>
 									</li>
 								</ul>
 							</li>
@@ -243,6 +245,8 @@
 			let bottom = document.getElementsByClassName('bottom')[0];
 			let dropdown = document.getElementsByClassName('dropdown')[0];
 			let footerdropdown = document.getElementsByClassName('footer-dropdown')[0];
+			let inputphone = document.getElementById('input-phone');
+			let demo = document.getElementById('demo');
 			function toggleList() {
 				list.classList.toggle('display-none')
 			}	
@@ -268,6 +272,17 @@
 					footerdropdown.classList.toggle('footer-height')
 				}
 				footerdropdownlist.classList.toggle('footer-dropdown-toggle')
+			}
+			function checkphone() {
+				let last = inputphone.value.charAt(inputphone.value.length - 1);
+				if(last >=0 && last <= 9) {
+					return;
+				}
+				else {
+					// inputphone.value.slice(0, -1);
+					inputphone.value = inputphone.value.slice(0, -1)
+					demo.innerHTML="input number"
+				}
 			}
 		</script>
 	</body>
